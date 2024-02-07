@@ -2,5 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["*.yaml.erb"],
+      "datasourceTemplate": "docker",
+      "matchStrings": ["image: (?<depName>.*?):(?<currentValue>.*?)"]
+    }
   ]
 }
