@@ -8,7 +8,7 @@
       "customType": "regex",
       "fileMatch": ["(^|/).*\\.ya?ml\\.erb$"],
       "datasourceTemplate": "docker",
-      "matchStrings": ["image: (?<depName>.*?):(?<currentValue>.*?)"]
+      "matchStrings": ["image: (?<depName>.*):(?<currentValue>.*)"]
     }
   ]
 }
