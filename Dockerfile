@@ -37,7 +37,9 @@ RUN apt-get update -y \
     && rm -rf ./percona-release_$PERCONA_VERSION.generic_all.deb \
     && percona-release setup pt
 
+# renovate: datasource=rubygems depName=bundler
 ARG BUNDLER_VERSION=2.5.4
+# renovate: datasource=github-releases depName=rubygems/rubygems
 ARG RUBYGEMS_VERSION=3.5.4
 RUN gem install bundler -v $BUNDLER_VERSION && \
     gem update --system $RUBYGEMS_VERSION
@@ -53,9 +55,13 @@ RUN addgroup --gid $APP_GROUP_GID $APP_GROUP && \
     mkdir $APP_PATH && \
     chown $APP_USER:$APP_GROUP $APP_PATH
 
+# renovate: datasource=github-releases depName=nvm-sh/nvm
 ENV NVM_VERSION 0.39.1
+# renovate: datasource=node-version depName=node versioning=node
 ENV NODE_VERSION 20.9.0
+# renovate: datasource=npm depName=npm
 ENV NPM_VERSION 7.24.2
+# renovate: datasource=npm depName=yarn
 ENV YARN_VERSION 1.22.17
 ENV NVM_DIR /home/app/.nvm
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
