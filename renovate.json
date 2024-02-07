@@ -6,7 +6,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^.*\\.ya?ml\\.erb$"],
+      "fileMatch": ["(^|/).*\\.ya?ml\\.erb$"],
       "datasourceTemplate": "docker",
       "matchStrings": ["image: (?<depName>.*?):(?<currentValue>.*?)"]
     }
