@@ -3,6 +3,12 @@
   "extends": [
     "config:recommended"
   ],
+  "packageRules": [
+    {
+      "packageNames": ["rubygems"],
+      "extractVersion": "^v(?<version>.*)$"
+    }
+  ],
   "customManagers": [
     {
       "customType": "regex",
