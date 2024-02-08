@@ -7,6 +7,10 @@
     {
       "packageNames": ["rubygems/rubygems"],
       "extractVersion": "^v(?<version>.*)$"
+    },
+    {
+      "packageNames": ["nvm-sh/nvm"],
+      "extractVersion": "^v(?<version>.*)$"
     }
   ],
   "customManagers": [
