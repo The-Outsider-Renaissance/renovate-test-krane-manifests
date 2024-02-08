@@ -40,7 +40,7 @@ RUN apt-get update -y \
 # renovate: datasource=rubygems depName=bundler
 ARG BUNDLER_VERSION=2.5.4
 # renovate: datasource=github-releases depName=rubygems/rubygems
-ARG RUBYGEMS_VERSION=3.5.4
+ARG RUBYGEMS_VERSION=v3.5.4
 RUN gem install bundler -v $BUNDLER_VERSION && \
     gem update --system $RUBYGEMS_VERSION
 
@@ -56,7 +56,7 @@ RUN addgroup --gid $APP_GROUP_GID $APP_GROUP && \
     chown $APP_USER:$APP_GROUP $APP_PATH
 
 # renovate: datasource=github-releases depName=nvm-sh/nvm
-ENV NVM_VERSION 0.39.1
+ENV NVM_VERSION v0.39.1
 # renovate: datasource=node-version depName=node versioning=node
 ENV NODE_VERSION 20.9.0
 # renovate: datasource=npm depName=npm
@@ -68,8 +68,8 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 RUN mkdir $NVM_DIR \
     && curl -o- https://raw.githubusercontent.com/creationix/nvm/v${NVM_VERSION}/install.sh | bash \
     && . $NVM_DIR/nvm.sh \
-    && nvm install v${NODE_VERSION} \
-    && nvm alias default v${NODE_VERSION} \
+    && nvm install ${NODE_VERSION} \
+    && nvm alias default ${NODE_VERSION} \
     && nvm use default \
     && npm install -g npm@${NPM_VERSION} \
     && npm install -g yarn@${YARN_VERSION} \
