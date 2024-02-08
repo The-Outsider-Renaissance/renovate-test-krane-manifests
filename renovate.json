@@ -6,7 +6,8 @@
   "configMigration": true,
   "kubernetes": {
     "fileMatch": [
-      "(^|/).*\\.ya?ml\\.erb$"
+      "config/deploy/.+\\.ya?ml\\.erb$",
+      "deploy/.+\\.ya?ml\\.erb$"
     ]
   },
   "packageRules": [
