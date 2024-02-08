@@ -39,7 +39,7 @@ RUN apt-get update -y \
 
 # renovate: datasource=rubygems depName=bundler
 ARG BUNDLER_VERSION=2.5.4
-# renovate: datasource=github-releases depName=rubygems/rubygems versioning=ruby extractVersion=^v(?<version>.*)$
+# renovate: datasource=github-releases depName=rubygems lookupName=rubygems/rubygems versioning=ruby extractVersion=^v(?<version>.*)$
 ARG RUBYGEMS_VERSION=3.5.4
 RUN gem install bundler -v $BUNDLER_VERSION && \
     gem update --system $RUBYGEMS_VERSION
@@ -55,7 +55,7 @@ RUN addgroup --gid $APP_GROUP_GID $APP_GROUP && \
     mkdir $APP_PATH && \
     chown $APP_USER:$APP_GROUP $APP_PATH
 
-# renovate: datasource=github-releases depName=nvm-sh/nvm extractVersion=^v(?<version>.*)$
+# renovate: datasource=github-releases depName=nvm lookupName=nvm-sh/nvm extractVersion=^v(?<version>.*)$
 ENV NVM_VERSION 0.39.1
 # renovate: datasource=node-version depName=node versioning=node
 ENV NODE_VERSION 20.9.0
