@@ -10,15 +10,5 @@
       "config/deploy/.+\\.ya?ml\\.erb$",
       "deploy/.+\\.ya?ml\\.erb$"
     ]
-  },
-  "packageRules": [
-    {
-      "packageNames": ["rubygems/rubygems"],
-      "extractVersion": "^v(?<version>.*)$"
-    },
-    {
-      "packageNames": ["nvm-sh/nvm"],
-      "extractVersion": "^v(?<version>.*)$"
-    }
-  ]
+  }
 }
