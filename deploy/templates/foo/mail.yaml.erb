@@ -1,6 +1,6 @@
 <% url = URI.parse(ingress["host"]) if ingress["host"] %>
 ---
-apiVersion: apps/v1
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: mail-test-server
