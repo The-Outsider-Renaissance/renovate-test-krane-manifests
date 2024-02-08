@@ -3,6 +3,11 @@
   "extends": [
     "config:best-practices"
   ],
+  "kubernetes": {
+    "fileMatch": [
+      "(^|/).*\\.ya?ml\\.erb$"
+    ]
+  },
   "packageRules": [
     {
       "packageNames": ["rubygems/rubygems"],
