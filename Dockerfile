@@ -40,7 +40,7 @@ RUN apt-get update -y \
 # renovate: datasource=rubygems depName=bundler
 ARG BUNDLER_VERSION=2.5.4
 # renovate: datasource=github-releases depName=rubygems/rubygems versioning=ruby extractVersion=^v(?<version>.*)$
-ARG RUBYGEMS_VERSION=3.5.4
+ARG RUBYGEMS_VERSION=3.5.6
 RUN gem install bundler -v $BUNDLER_VERSION && \
     gem update --system $RUBYGEMS_VERSION
 
