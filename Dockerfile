@@ -56,7 +56,7 @@ RUN addgroup --gid $APP_GROUP_GID $APP_GROUP && \
     chown $APP_USER:$APP_GROUP $APP_PATH
 
 # renovate: datasource=github-releases depName=nvm-sh/nvm extractVersion=^v(?<version>.*)$
-ENV NVM_VERSION 0.39.1
+ENV NVM_VERSION 0.39.7
 # renovate: datasource=node-version depName=node versioning=node
 ENV NODE_VERSION 20.9.0
 # renovate: datasource=npm depName=npm
