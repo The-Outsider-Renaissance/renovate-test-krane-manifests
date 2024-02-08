@@ -3,5 +3,11 @@
   "extends": [
     "config:best-practices",
     "regexManagers:dockerfileVersions"
-  ]
+  ],
+  "kubernetes": {
+    "fileMatch": [
+      "config/deploy/.+\\.ya?ml\\.erb$",
+      "deploy/.+\\.ya?ml\\.erb$"
+    ]
+  }
 }
