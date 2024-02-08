@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1.6.0
 
-FROM ruby:3.3.0-slim-bullseye AS base
+FROM ruby:3.2.3-slim-bullseye AS base
 
 ENV TZ=America/New_York
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
