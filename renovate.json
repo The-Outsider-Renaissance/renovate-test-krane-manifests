@@ -15,9 +15,9 @@
       "matchPackageNames": [
         "ruby"
       ],
-      "allowedVersions": "!/3.0.0/",
+      "allowedVersions": "!/3.3.0/",
       "description": [
-        "Ruby 3.0.0 includes a bug."
+        "Ruby 3.3.0 includes a bug."
       ]
     }
   ]
