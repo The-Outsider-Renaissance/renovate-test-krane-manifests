@@ -10,13 +10,15 @@
       "deploy/.+\\.ya?ml\\.erb$"
     ]
   },
-  {
-    "matchPackageNames": [
-      "ruby"
-    ],
-    "allowedVersions": "!/3.0.0/",
-    "description": [
-      "Ruby 3.0.0 includes a bug."
-    ]
-  }
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "ruby"
+      ],
+      "allowedVersions": "!/3.0.0/",
+      "description": [
+        "Ruby 3.0.0 includes a bug."
+      ]
+    }
+  ]
 }
