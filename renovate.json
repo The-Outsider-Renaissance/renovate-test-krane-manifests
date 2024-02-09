@@ -9,5 +9,16 @@
       "config/deploy/.+\\.ya?ml\\.erb$",
       "deploy/.+\\.ya?ml\\.erb$"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "ruby"
+      ],
+      "allowedVersions": "!/3.0.0/",
+      "description": [
+        "Ruby 3.0.0 includes a bug."
+      ]
+    }
+  ]
 }
