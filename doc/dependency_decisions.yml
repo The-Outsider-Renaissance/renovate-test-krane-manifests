@@ -12,8 +12,7 @@
   - :who: Katie Edgar <katie.weber@powerhrg.com>
     :why: SaaS backend use-case permitted w/ GPL-2.0 license by https://tech.powerhrg.com/oss-guide/docs/using/permitted-licenses.html\#permitted-licenses
     :versions:
-    # renovate: datasource=rubygems depName=activeldap
-    - 6.1.0
+    - 6.1.0 # renovate: datasource=rubygems depName=activeldap
     :when: 2022-05-04 10:09:20.574806000 Z
 - - :approve
   - webpacker-react
@@ -53,14 +52,12 @@
       a restricted use case for the LGPL-3.0, but use of the Sidekiq UI does not constitute
       a modification, derived work or statically linking.
     :versions:
-    # renovate: datasource=rubygems depName=sidekiq
-    - 7.2.1
+    - 7.2.1 # renovate: datasource=rubygems depName=sidekiq
     :when: 2023-05-03 13:00:58.271102430 Z
 - - :approve
   - device_detector
   - :who: Stephen Greer
     :why: https://github.com/podigee/device_detector/blob/develop/LICENSE.txt
     :versions:
-    # renovate: datasource=rubygems depName=device_detector
-    - 1.1.2
+    - 1.1.2 # renovate: datasource=rubygems depName=device_detector
     :when: 2023-09-14 20:20:39.265757090 Z
