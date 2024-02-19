@@ -479,7 +479,7 @@ GEM
     sanitize (6.1.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    scimitar (2.6.1)
+    scimitar (2.7.1)
       rails (~> 7.0)
     selenium-webdriver (4.10.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -497,7 +497,7 @@ GEM
     shoulda-context (2.0.0)
     shoulda-matchers (4.5.1)
       activesupport (>= 4.2.0)
-    sidekiq (7.2.1)
+    sidekiq (7.2.2)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
@@ -659,7 +659,7 @@ DEPENDENCIES
   sentry-ruby
   shoulda
   shoulda-matchers
-  sidekiq (= 7.2.1)
+  sidekiq (= 7.2.2)
   sidekiq-cron (= 1.12.0)
   smbhash (= 1.1.0)
   sprockets-rails
