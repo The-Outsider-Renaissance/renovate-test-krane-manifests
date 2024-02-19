@@ -12,6 +12,7 @@
   - :who: Katie Edgar <katie.weber@powerhrg.com>
     :why: SaaS backend use-case permitted w/ GPL-2.0 license by https://tech.powerhrg.com/oss-guide/docs/using/permitted-licenses.html\#permitted-licenses
     :versions:
+    # renovate: datasource=rubygems depName=activeldap
     - 6.1.0
     :when: 2022-05-04 10:09:20.574806000 Z
 - - :approve
@@ -60,5 +61,6 @@
   - :who: Stephen Greer
     :why: https://github.com/podigee/device_detector/blob/develop/LICENSE.txt
     :versions:
+    # renovate: datasource=rubygems depName=device_detector
     - 1.1.2
     :when: 2023-09-14 20:20:39.265757090 Z
