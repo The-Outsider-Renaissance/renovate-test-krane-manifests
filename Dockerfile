@@ -38,7 +38,7 @@ RUN apt-get update -y \
     && percona-release setup pt
 
 # renovate: datasource=rubygems depName=bundler
-ARG BUNDLER_VERSION=2.5.4
+ARG BUNDLER_VERSION=2.5.6
 # renovate: datasource=github-releases depName=rubygems lookupName=rubygems/rubygems versioning=ruby extractVersion=^v(?<version>.*)$
 ARG RUBYGEMS_VERSION=3.5.4
 RUN gem install bundler -v $BUNDLER_VERSION && \
