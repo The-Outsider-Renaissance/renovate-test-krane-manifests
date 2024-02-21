@@ -4,6 +4,7 @@
     "config:best-practices",
     "regexManagers:dockerfileVersions"
   ],
+  "rangeStrategy": "pin",
   "kubernetes": {
     "fileMatch": [
       "config/deploy/.+\\.ya?ml\\.erb$",
