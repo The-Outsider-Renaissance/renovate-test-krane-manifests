@@ -5,12 +5,18 @@ FROM ruby:3.2.3-slim-bullseye AS base
 ENV TZ=America/New_York
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
+# renovate: datasource=repology depName=debian_11/awscli versioning=deb
+ENV AWSCLI_VERSION 1.19.1-1
+
+# renovate: datasource=repology depName=debian_11/tzdata versioning=deb
+ENV TZDATA_VERSION 2021a-1+deb11u11
+
 ARG PACKAGES=" \
   build-essential=12.9 \
   curl=7.74.0-1.3+deb11u11 \
   default-libmysqlclient-dev=1.0.7 \
   default-mysql-client=1.0.7 \
-  firefox-esr=102.15.0esr-1~deb11u1 \
+  firefox-esr=115.7.0esr-1~deb11u1 \
   gnupg2=2.2.27-2+deb11u2 \
   ldapscripts=2.0.8-2 \
   libldap2-dev=2.4.57+dfsg-3+deb11u1 \
@@ -18,10 +24,10 @@ ARG PACKAGES=" \
   lsb-release=11.1.0 \
   openssl=1.1.1w-0+deb11u1 \
   percona-toolkit=3.2.1-1 \
-  tzdata=2021a-1+deb11u11 \
-  xvfb=2:1.20.11-1+deb11u6 \
+  tzdata=${TZDATA_VERSION} \
+  xvfb=2:1.20.11-1+deb11u11 \
   zlib1g=1:1.2.11.dfsg-2+deb11u2 \
-  awscli=1.19.1-1 \
+  awscli=${AWSCLI_VERSION} \
 "
 
 RUN apt-get update -y \
