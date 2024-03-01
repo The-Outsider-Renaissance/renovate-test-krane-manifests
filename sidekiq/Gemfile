@@ -80,7 +80,7 @@ gem "scimitar", "2.7.1"
 
 gem "rack-attack", "6.7.0"
 
-gem "departure", "6.6.0"
+gem "departure", "6.7.0"
 gem "device_detector", "1.1.2"
 gem "flipper"
 gem "flipper-active_record"
