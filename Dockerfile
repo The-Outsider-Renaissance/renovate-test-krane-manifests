@@ -9,7 +9,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 ENV AWSCLI_VERSION 1.19.1-1
 
 # renovate: datasource=repology depName=debian_11/tzdata versioning=deb
-ENV TZDATA_VERSION 2021a-1+deb11u11
+ENV TZDATA_VERSION 2024a-0+deb11u1
 
 ARG PACKAGES=" \
   build-essential=12.9 \
