@@ -68,7 +68,7 @@ ENV NODE_VERSION 20.9.0
 # renovate: datasource=npm depName=npm
 ENV NPM_VERSION 7.24.2
 # renovate: datasource=npm depName=yarn
-ENV YARN_VERSION 1.22.17
+ENV YARN_VERSION 1.22.22
 ENV NVM_DIR /home/app/.nvm
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 RUN mkdir $NVM_DIR \
