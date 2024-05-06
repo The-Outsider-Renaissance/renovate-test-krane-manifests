@@ -88,7 +88,7 @@ FROM base AS prod
 
 RUN bundle config --global frozen true
 
-COPY --chown=$APP_USER:$APP_GROUP Gemfile* $APP_PATH/
+COPY --chown=$APP_USER:$APP_GROUP Gemfile* .ruby-version $APP_PATH/
 RUN bundle install
 
 COPY --chown=$APP_USER:$APP_GROUP package* yarn.lock $APP_PATH/
