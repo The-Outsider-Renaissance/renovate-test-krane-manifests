@@ -52,7 +52,7 @@
       a restricted use case for the LGPL-3.0, but use of the Sidekiq UI does not constitute
       a modification, derived work or statically linking.
     :versions:
-    - 7.2.1 # renovate: datasource=rubygems depName=sidekiq
+    - 7.3.4 # renovate: datasource=rubygems depName=sidekiq
     :when: 2023-05-03 13:00:58.271102430 Z
 - - :approve
   - device_detector
